@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <title>文章归档 - Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="kkddyz">
+<meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
+  
+  <link rel="stylesheet" href="/css/style.css?v=1607056959982">
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="kkddyz" class="mdui-btn mdui-btn-icon"><img src="https://kkddyz-resource-save-logo-pic-etc.oss-cn-beijing.aliyuncs.com/blog/avatar.jpg" alt="kkddyz"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="kkddyz">
+            <img src="https://kkddyz-resource-save-logo-pic-etc.oss-cn-beijing.aliyuncs.com/blog/avatar.jpg" alt="kkddyz" alt="kkddyz">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>1</div>
+        <div><span>标签</span>1</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/java/" style="font-size: 10px;">java</a>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+<style>
+.nexmoe-widget .archive-list-count{
+	position : absolute;
+	right: 15px;
+	top:9px;
+	color: #DDD;
+}
+</style>
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 kkddyz
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2020/12/04/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Java正则表达式" class="lazyload">
+                    <h1>Java正则表达式</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月04日</a>
+            <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
+        </div>
+
+        <article>
+            
+                <hr>
+<hr>
+<h3 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h3><blockquote>
+<p>原始需求:<br>解析 complex.format()得到的formatted:String,如: “(1,2i)”</p>
+<p>难点在于匹配对象是模式而非具体，得到 [int real=1 ; int real = 2] 这两个complex对象的属性</p>
+<p>因此String提供的提取方法不起作用；</p>
+<p>符合需求的工具是 <strong>Java Regular Expression</strong></p>
+</blockquote>
+<h3 id="截取字符串-无效方法"><a href="#截取字符串-无效方法" class="headerlink" title="截取字符串(无效方法)"></a>截取字符串(无效方法)</h3><blockquote>
+<p>补充String提取字符串的常用方法</p>
+<img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20170809090841097?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveHVlaHl1bnl1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload">
+
+<img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20170809090908389" alt="img" class="lazyload">
+</blockquote>
+<h3 id="Java-正则表达式"><a href="#Java-正则表达式" class="headerlink" title="Java 正则表达式"></a>Java 正则表达式</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1XW411R7RF?from=search&seid=11324223660762824293">视频链接</a></li>
+</ul>
+<h4 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h4><ul>
+<li>表示字符本身</li>
+</ul>
+<p>简单的转义字符</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204112032.png" alt="image-20201127164702982" class="lazyload"></p>
+<blockquote>
+<p>转义字符是指用\修饰的字符 </p>
+<p>而原本的字符在正则表达式中有着特殊的含义。</p>
+</blockquote>
+<h4 id="标准字符集合"><a href="#标准字符集合" class="headerlink" title="标准字符集合"></a>标准字符集合</h4><ul>
+<li>表示模式 </li>
+<li>大写表示取反<ul>
+<li>比如 \d 匹配数字 \D匹配非数字</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>regx</th>
+<th>匹配对象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d</td>
+<td>数字</td>
+<td>null</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>字母数字下划线</td>
+<td>合法用户名的组成字符</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>空白字符</td>
+<td>line break      space tab</td>
+</tr>
+<tr>
+<td>.</td>
+<td>任意字符</td>
+<td>除了换行符 如果要匹配换行符一般用[\s\S]</td>
+</tr>
+</tbody></table>
+<h4 id="自定义字符集合"><a href="#自定义字符集合" class="headerlink" title="自定义字符集合"></a>自定义字符集合</h4><table>
+<thead>
+<tr>
+<th>regx</th>
+<th>匹配对象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[abc]</td>
+<td>a || b || c</td>
+<td>匹配a或b或c</td>
+</tr>
+<tr>
+<td>[^abc]</td>
+<td>匹配abc以外字符</td>
+<td>通过^取反</td>
+</tr>
+<tr>
+<td>[0-a]</td>
+<td>匹配连续字符</td>
+<td>字符序列的顺序是 0-9 A-Z a-z (按ascii码升序)</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注意之前提到的转义字符在[]在没有歧义的情况下不需要加\   </li>
+</ul>
+<h4 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h4><table>
+<thead>
+<tr>
+<th>regex</th>
+<th>匹配对象</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\d{6}</td>
+<td>连续六个数字</td>
+<td>\d\d{6}匹配7位 (\d\d){6} 匹配12位感觉像乘法优先级比加法高</td>
+<td></td>
+</tr>
+<tr>
+<td>\d{m,n}</td>
+<td>匹配n,m位数字</td>
+<td>贪婪模式: 匹配的越多越好</td>
+<td></td>
+</tr>
+<tr>
+<td>\d{m,}</td>
+<td></td>
+<td>至少重复m次</td>
+<td></td>
+</tr>
+<tr>
+<td>\d?</td>
+<td></td>
+<td>等价于 \d{0,1}</td>
+<td></td>
+</tr>
+<tr>
+<td>\d+</td>
+<td></td>
+<td>等价于 \d{1,}</td>
+<td></td>
+</tr>
+<tr>
+<td>\d*</td>
+<td></td>
+<td>等价于 \d{0,}</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="字符边界"><a href="#字符边界" class="headerlink" title="字符边界"></a>字符边界</h4><ul>
+<li>表示的不是字符而是边界,对匹配字符的位置位置进行限定(满足规则的字符串还必须出现在指定的位置)</li>
+<li>由于边界和光标位置一样处在两个字符之间，因此是”零宽”的。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>regex</th>
+<th>匹配对象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^abc</td>
+<td>字符串开头的abc</td>
+<td>^匹配字符串开始的位置</td>
+</tr>
+<tr>
+<td>abc$</td>
+<td>字符串结尾的abc</td>
+<td>$匹配字符串的结束位置</td>
+</tr>
+<tr>
+<td>\babc</td>
+<td></td>
+<td>匹配一个位置，前面的字符和后面的字符不全是\w 不是\w可以是什么呢？ 可以是空白字符和@#%$这些不构成单词的字符</td>
+</tr>
+</tbody></table>
+<h4 id="匹配模式"><a href="#匹配模式" class="headerlink" title="匹配模式"></a>匹配模式</h4><ul>
+<li>IGNORECASE 忽略大小写 </li>
+<li>SINGLELINE 单行模式  <ul>
+<li>将整个文本看作一个字符串，只有一个开头和结尾</li>
+<li>这时 “.” 可以匹配”\n”</li>
+</ul>
+</li>
+<li>MUTILINE 多行模式 <ul>
+<li>每行都是一个字符串，都有开头和结尾。</li>
+<li>该模式下使用 \A 匹配最开始位置 \Z匹配最末尾</li>
+</ul>
+</li>
+</ul>
+<h4 id="选择符和分组"><a href="#选择符和分组" class="headerlink" title="选择符和分组"></a>选择符和分组</h4><table>
+<thead>
+<tr>
+<th>regx</th>
+<th>匹配对象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>|</td>
+<td>配对对象满足左表达式或右表达式</td>
+<td></td>
+</tr>
+<tr>
+<td>()                                                             捕获组</td>
+<td>1. 作为整体被量词修饰                                                                                                                                              2. 取匹配结果的时候，括号中的表达式匹配到的内容可以被单独拿到                                                                                                                                           3. 每一对括号分配编号从1开始                                                                                                                      4.group(0)表示的是符合所有分组的匹配对象</td>
+<td></td>
+</tr>
+<tr>
+<td>(?:)                                 非捕获      组</td>
+<td>捕获组会自动将捕获到的字符放入内存 ，但是有时候我们只是需要使用括号来组织表达式结构(把某部分看作整体)，而不会用到反向应用，这时候就需要使用？声明。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="反向引用-nnn"><a href="#反向引用-nnn" class="headerlink" title="反向引用(\nnn)"></a>反向引用(\nnn)</h5><ul>
+<li>对已捕获的分组字符串进行引用</li>
+<li>他表示的是普通字符而不是模式</li>
+</ul>
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pattren : [a-z]&#123;2&#125;\1 </span><br><span class="line">string : asdasd gogo </span><br><span class="line">&#x2F;&#x2F; 匹配结果 gogo \1以引用的方式</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h4 id="预搜索-零宽断言"><a href="#预搜索-零宽断言" class="headerlink" title="预搜索(零宽断言)"></a>预搜索(零宽断言)</h4><table>
+<thead>
+<tr>
+<th>regx</th>
+<th>匹配对象</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>(?=exp)  `([a-z]+)(?=ing)</td>
+<td>断言此位置后面一定是exp</td>
+<td></td>
+</tr>
+<tr>
+<td>(?!exp)</td>
+<td>断言此位置后面不是exp</td>
+<td></td>
+</tr>
+<tr>
+<td>(?&lt;=exp)</td>
+<td>断言此位置前面一定是exp</td>
+<td></td>
+</tr>
+<tr>
+<td>(?&lt;!exp)</td>
+<td>断言此位置前面不是exp</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="Java语法"><a href="#Java语法" class="headerlink" title="Java语法"></a>Java语法</h4><ul>
+<li>Pattern :<ul>
+<li>正则表达式的编译表示形式</li>
+<li>Pattern p = new Pattren.compile(r,int);//建立正则表达式，并启用相应的模式</li>
+</ul>
+</li>
+<li>Matcher<ul>
+<li>通过解释Pattern对character sequence 执行匹配操作的引擎</li>
+<li>Macher m = p.matcher(str); // str 匹配字符串</li>
+</ul>
+</li>
+</ul>
+
+            
+        </article>
+    </div>
+    
+</section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+ <script src="/js/app.js?v=1607056959983"></script>
+
+  
+
+
+
+
+
+</body>
+
+</html>
