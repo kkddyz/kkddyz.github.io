@@ -12,25 +12,25 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="问题引入 原始需求:解析 complex.format()得到的formatted:String,如: “(1,2i)” 难点在于匹配对象是模式而非具体，得到 [int real&#x3D;1 ; int real &#x3D; 2] 这两个complex对象的属性 因此String提供的提取方法不起作用； 符合需求的工具是 Java Regular Expression  截取字符串(无效方法) 补充Strin">
+  <meta name="description" content="[TOC] 问题引入 原始需求:解析 complex.format()得到的formatted:String,如: “(1,2i)” 难点在于匹配对象是模式而非具体，得到 [int real&#x3D;1 ; int real &#x3D; 2] 这两个complex对象的属性 因此String提供的提取方法不起作用； 符合需求的工具是 Java Regular Expression  截取字符串(无效方法) 补">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java正则表达式">
 <meta property="og:url" content="http://example.com/2020/12/04/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="问题引入 原始需求:解析 complex.format()得到的formatted:String,如: “(1,2i)” 难点在于匹配对象是模式而非具体，得到 [int real&#x3D;1 ; int real &#x3D; 2] 这两个complex对象的属性 因此String提供的提取方法不起作用； 符合需求的工具是 Java Regular Expression  截取字符串(无效方法) 补充Strin">
+<meta property="og:description" content="[TOC] 问题引入 原始需求:解析 complex.format()得到的formatted:String,如: “(1,2i)” 难点在于匹配对象是模式而非具体，得到 [int real&#x3D;1 ; int real &#x3D; 2] 这两个complex对象的属性 因此String提供的提取方法不起作用； 符合需求的工具是 Java Regular Expression  截取字符串(无效方法) 补">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdn.net/20170809090841097?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveHVlaHl1bnl1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
 <meta property="og:image" content="https://img-blog.csdn.net/20170809090908389">
 <meta property="og:image" content="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204112032.png">
 <meta property="article:published_time" content="2020-12-04T03:19:01.000Z">
-<meta property="article:modified_time" content="2020-12-04T03:22:28.835Z">
+<meta property="article:modified_time" content="2020-12-04T04:56:15.491Z">
 <meta property="article:author" content="kkddyz">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20170809090841097?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveHVlaHl1bnl1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1607056959980">
+  <link rel="stylesheet" href="/css/style.css?v=1607085154595">
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -54,8 +54,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>1</div>
-        <div><span>标签</span>1</div>
+        <div><span>文章</span>2</div>
+        <div><span>标签</span>2</div>
         <div><span>分类</span>0</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -110,7 +110,7 @@
   
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/java/" style="font-size: 10px;">java</a>
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
     </div>
     
   </div>
@@ -120,7 +120,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -161,11 +161,20 @@
 
   <div class="nexmoe-post-right">
     
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%BC%95%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text">问题引入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%AA%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2-%E6%97%A0%E6%95%88%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">截取字符串(无效方法)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">Java 正则表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%A0%87%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">普通标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E5%AD%97%E7%AC%A6"><span class="toc-number">4.1.</span> <span class="toc-text">普通字符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E5%AD%97%E7%AC%A6-1"><span class="toc-number">4.1.1.</span> <span class="toc-text">普通字符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E5%AD%97%E7%AC%A6%E9%9B%86%E5%90%88"><span class="toc-number">4.2.</span> <span class="toc-text">标准字符集合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E7%AC%A6%E9%9B%86%E5%90%88"><span class="toc-number">4.3.</span> <span class="toc-text">自定义字符集合</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8F%E8%AF%8D"><span class="toc-number">4.4.</span> <span class="toc-text">量词</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E8%BE%B9%E7%95%8C"><span class="toc-number">4.5.</span> <span class="toc-text">字符边界</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.6.</span> <span class="toc-text">匹配模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E7%AC%A6%E5%92%8C%E5%88%86%E7%BB%84"><span class="toc-number">4.7.</span> <span class="toc-text">选择符和分组</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E5%BC%95%E7%94%A8-nnn"><span class="toc-number">4.7.1.</span> <span class="toc-text">反向引用(\nnn)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E6%90%9C%E7%B4%A2-%E9%9B%B6%E5%AE%BD%E6%96%AD%E8%A8%80"><span class="toc-number">4.8.</span> <span class="toc-text">预搜索(零宽断言)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E8%AF%AD%E6%B3%95"><span class="toc-number">4.9.</span> <span class="toc-text">Java语法</span></a></li></ol></li></ol>
+            </div>
+        </div>
+      </div>
+    
   </div>
 
   <article>
     <hr>
 <hr>
+<p>[TOC]</p>
 <h3 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h3><blockquote>
 <p>原始需求:<br>解析 complex.format()得到的formatted:String,如: “(1,2i)”</p>
 <p>难点在于匹配对象是模式而非具体，得到 [int real=1 ; int real = 2] 这两个complex对象的属性</p>
@@ -181,7 +190,7 @@
 <h3 id="Java-正则表达式"><a href="#Java-正则表达式" class="headerlink" title="Java 正则表达式"></a>Java 正则表达式</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1XW411R7RF?from=search&seid=11324223660762824293">视频链接</a></li>
 </ul>
-<h4 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h4><ul>
+<h3 id="普通标题"><a href="#普通标题" class="headerlink" title="普通标题"></a>普通标题</h3><h4 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h4><h5 id="普通字符-1"><a href="#普通字符-1" class="headerlink" title="普通字符"></a>普通字符</h5><ul>
 <li>表示字符本身</li>
 </ul>
 <p>简单的转义字符</p>
@@ -472,7 +481,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1607056959982"></script>
+ <script src="/js/app.js?v=1607085154596"></script>
 
   
 
