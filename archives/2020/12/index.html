@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
-
 <head>
-  
-  <title>文章归档：2020/12 - Blog</title>
   <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  
-  
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
 <meta property="og:url" content="http://example.com/archives/2020/12/index.html">
@@ -19,577 +27,338 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="kkddyz">
 <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
-  
-  <link rel="stylesheet" href="/css/style.css?v=1607933750805">
-<meta name="generator" content="Hexo 5.2.0"></head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="kkddyz" class="mdui-btn mdui-btn-icon"><img src="https://kkddyz-resource-save-logo-pic-etc.oss-cn-beijing.aliyuncs.com/blog/avatar.jpg" alt="kkddyz"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="kkddyz">
-            <img src="https://kkddyz-resource-save-logo-pic-etc.oss-cn-beijing.aliyuncs.com/blog/avatar.jpg" alt="kkddyz" alt="kkddyz">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>文章</span>3</div>
-        <div><span>标签</span>3</div>
-        <div><span>分类</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
-            <i class="nexmoefont icon-QQ"></i>
-        </a><a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a>
-    </div>
-    
-  </div>
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">文章归档</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-  </div>
+<link rel="canonical" href="http://example.com/archives/2020/12/">
 
 
-<style>
-.nexmoe-widget .archive-list-count{
-	position : absolute;
-	right: 15px;
-	top:9px;
-	color: #DDD;
-}
-</style>
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2020 kkddyz
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
-  </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <section class="nexmoe-posts">
-    
-    <div class="nexmoe-post">
-        <a href="/2020/12/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91-%E4%B8%8B-%E5%A0%86/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="树(下) 堆" class="lazyload">
-                    <h1>树(下) 堆</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月14日</a>
-            <a><i class="nexmoefont icon-areachart"></i>766 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
-        </div>
-
-        <article>
-            
-                <blockquote>
-<p>学习堆-树-浙大数据结构-慕课 </p>
-</blockquote>
-<h2 id="什么是堆？"><a href="#什么是堆？" class="headerlink" title="什么是堆？"></a>什么是堆？</h2><ul>
-<li><strong>优先队列(Priority Queue)</strong> ：特殊的 “队列” ,取出元素的顺序按照元素的**优先权(关键字)**大小，而不是入队顺序决定。</li>
-</ul>
-<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ol>
-<li>线性结构</li>
-</ol>
-<img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214094255.png" alt="image-20201214094255458" class="lazyload">
-
-<ul>
-<li>我们发现插入或者删除总有一个操作效率不理想。</li>
-</ul>
-<ol start="2">
-<li>二叉树 </li>
-</ol>
-<ul>
-<li>如果使用二叉树，插入删除都是O(log n)</li>
-<li>问题在于不断地删除操作会使得树逐渐不平衡，效率降低 ：O(log n) -&gt; O(n)</li>
-</ul>
-<ol start="3">
-<li>完全二叉树</li>
-</ol>
-<img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214095513.png" alt="image-20201214095513054" class="lazyload">
-
-
-
-<p>我们可以发现它的每一条路径(root -&gt; 叶节点) 都是一条有序链表；</p>
-<hr>
-<h2 id="抽象数据描述"><a href="#抽象数据描述" class="headerlink" title="抽象数据描述"></a>抽象数据描述</h2><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214100205.png" alt="image-20201214100205272" class="lazyload">
-
-
-
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ClassName</span> MaxHeap</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> 学习 堆-树-浙大数据结构-慕课</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span> 2020/12/14 10:10</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MaxHeap</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] array; </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size; </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> capacity;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> capacity)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.capacity = capacity;</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">        array = <span class="keyword">new</span> <span class="keyword">int</span>[capacity + <span class="number">1</span>]; <span class="comment">//  0 不存放元素</span></span><br><span class="line">        array[<span class="number">0</span>] = Integer.MAX_VALUE;  <span class="comment">//  放置一个最大值作为哨兵</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> capacity,<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(capacity);</span><br><span class="line">        <span class="keyword">this</span>.create(arr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFull</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == capacity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 最大堆的建立</span></span><br><span class="line"><span class="comment">     * 1. 通过不断插入 其最大事件复杂度O(N log N)</span></span><br><span class="line"><span class="comment">     * 2. 将n个元素顺序放入 从后向前依次调整</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">create</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 拷贝</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">this</span>.array[i + <span class="number">1</span>] = arr[i];</span><br><span class="line">            size++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调整</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> parent, child, temp;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调整以array[i]为根的完全二叉树</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = size / <span class="number">2</span>; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="comment">// 拿到要调整的元素</span></span><br><span class="line">            temp = array[i];</span><br><span class="line">            <span class="keyword">for</span> (parent = i; parent * <span class="number">2</span> &lt;= size; parent = child) &#123;</span><br><span class="line">                child = parent * <span class="number">2</span>;</span><br><span class="line">                <span class="comment">// child指向较大的儿子 [思考需要变化的情况以及变化的前提条件]</span></span><br><span class="line">                <span class="keyword">if</span> (child != size &amp;&amp; array[child] &lt; array[child + <span class="number">1</span>]) &#123;</span><br><span class="line">                    child++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// temp &gt; child child上移</span></span><br><span class="line">                <span class="keyword">if</span> (temp &lt; array[child]) &#123;</span><br><span class="line">                    array[parent] = array[child];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            array[parent] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> item)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (isFull())</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;最大堆已满&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="comment">// 调序 : 最大堆 降序</span></span><br><span class="line">        <span class="keyword">for</span> (i = ++size; item &gt; array[i / <span class="number">2</span>]; i /= <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="comment">// 向下过滤节点</span></span><br><span class="line">            array[i] = array[i / <span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 插入item</span></span><br><span class="line">        array[i] = item; <span class="comment">// item &lt; array[i/2] i 当前所在的位置</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">deleteMax</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> parent, child;</span><br><span class="line">        <span class="keyword">if</span> (isEmpty())</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;最大堆已空&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> maxItem = array[<span class="number">1</span>]; <span class="comment">//取出最大元素返回</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 拿到末端元素</span></span><br><span class="line">        <span class="keyword">int</span> temp = array[size--]; <span class="comment">// 不需要将size上的元素置空</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (parent = <span class="number">1</span>; parent * <span class="number">2</span> &lt;= size; parent = child) &#123;</span><br><span class="line">            child = parent * <span class="number">2</span>;</span><br><span class="line">            <span class="comment">// child指向较大的儿子 [思考需要变化的情况以及变化的前提条件]</span></span><br><span class="line">            <span class="keyword">if</span> (child != size &amp;&amp; array[child] &lt; array[child + <span class="number">1</span>]) &#123;</span><br><span class="line">                child++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// temp &gt; child child上移</span></span><br><span class="line">            <span class="keyword">if</span> (temp &lt; array[child]) &#123;</span><br><span class="line">                array[parent] = array[child];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        array[parent] = temp;</span><br><span class="line">        <span class="keyword">return</span> maxItem;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(Arrays.toString(array));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>&#125;;</span><br><span class="line">        MaxHeap maxHeap = <span class="keyword">new</span> MaxHeap(<span class="number">15</span>,arr);</span><br><span class="line">        maxHeap.print();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            maxHeap.insert(<span class="number">15</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        maxHeap.print();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="代码详解"><a href="#代码详解" class="headerlink" title="代码详解"></a>代码详解</h2><p>这部分过一阵子，等复习到的时候画一份图解；</p>
-<p>建议自己看视频学习；</p>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/12/04/git/git%E5%88%86%E6%94%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="git分支学习笔记" class="lazyload">
-                    <h1>git分支学习笔记</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月04日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1.1k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
-        </div>
-
-        <article>
-            
-                <hr>
-<blockquote>
-<p>学习视频:</p>
-<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1PW4sBXX_5u6BgfMIiVzBSA">https://pan.baidu.com/s/1PW4sBXX_5u6BgfMIiVzBSA</a><br>提取码：bbpm<br>复制这段内容后打开百度网盘手机App，操作更方便哦–来自百度网盘超级会员V3的分享</p>
-<p>参考:</p>
-<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">GitBook</a></p>
-</blockquote>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><ul>
-<li>devaricate，所以测试的时候常用dev表示分支</li>
-</ul>
-<h2 id="分支创建"><a href="#分支创建" class="headerlink" title="分支创建"></a>分支创建</h2><blockquote>
-<p>补充 HEAD 概念：</p>
-<p>HEAD是一个特殊指针，指向当前所在的本地分支；</p>
-</blockquote>
-<p>Git 是怎么创建新分支的呢？ 很简单，它只是为你创建了一个可以移动的新的指针。 </p>
-<p>比如，创建一个 dev分支， 你需要使用 <code>git branch</code> 命令：</p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git branch dev</span></span><br></pre></td></tr></table></figure>
-
-<p>这会在当前所在的提交对象上创建一个dev指针,如下图</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204191346.png" alt="image-20201204191346293" class="lazyload"> 在本例中，你</p>
-<p> 因为 <code>git branch</code> 命令仅仅 <strong>创建</strong> 一个新分支，我们需要使用<code>git checkout</code> 切换分支dev。</p>
-<p>在几次commit之后，情况会变成这样：</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204193723.png" alt="image-20201204193723061" class="lazyload"></p>
-<hr>
-<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;$ git checkout dev</span><br></pre></td></tr></table></figure>
-
-<p>这条命令做了两件事。 一是使 HEAD 指回 <code>master</code> 分支，二是将工作目录恢复成 <code>master</code> 分支所指向的快照内容。 也就是说，你现在做修改的话，项目将始于一个较旧的版本。 </p>
-<p>本质上来讲，这就是忽略 <code>dev</code> 分支所做的修改，以便于向另一个方向进行开发。</p>
-</blockquote>
-<p>此时你也可以切换到master，进行commit,这时结构就形成了一棵树，如下图：</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204193856.png" alt="image-20201204193856746" class="lazyload"></p>
-<p>这说明了分支的特点，实现并行开发。</p>
-<p>但是我们一般是将dev分支的变化合并到master上；</p>
-<hr>
-<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><blockquote>
-<p><strong>命令简写</strong></p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout -b dev</span></span><br><span class="line">Switched to a new branch &quot;dev&quot;</span><br></pre></td></tr></table></figure>
-
-<p>它是下面两条命令的简写：</p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git branch dev</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout dev</span></span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="简单合并-fast-forward"><a href="#简单合并-fast-forward" class="headerlink" title="简单合并(fast-forward)"></a>简单合并(fast-forward)</h3><p>现在我们已经完成了dev分支的开发任务C7作为最终版本提交，现在需要将其合并回master；</p>
-<blockquote>
-<p><strong>合并分支</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">$ git merge dev</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>示意图</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204202228.png" alt="image-20201204202228694" class="lazyload"></p>
-<blockquote>
-<p><strong>fast-forward</strong></p>
-<p>在合并的时候，出现提示 <code>fast-forward</code>。</p>
-<p>由于你想要合并的分支 <code>dev</code> 所指向的提交 <code>C6</code> 是你所在的提交 <code>C3</code> 的直接后继.因此 Git 会直接将指针向前移动。</p>
-<p>换句话说，当你试图合并两个分支时， 如果顺着一个分支走下去能够到达另一个分支，那么 Git 在合并两者的时候， 只会简单的将指针向前推进（指针右移），因为这种情况下的合并操作没有需要解决的分歧——这就叫做 “快进（fast-forward）”。</p>
-</blockquote>
-<h3 id="三相合并"><a href="#三相合并" class="headerlink" title="三相合并"></a>三相合并</h3><p><img data-fancybox="gallery" data-sizes="auto" data-src="https://git-scm.com/book/en/v2/images/basic-branching-6.png" alt="继续在 `iss53` 分支上的工作。" class="lazyload"></p>
-<p><font color="blue">问题出现的原因是 ：在开发iss53分支时C2出现了紧急问题，我们通过创建新分支hotfix修复并通过fastforward合并到C4。</font></p>
-<p><font color="blue">我们面临的问题是 ：将两个不同分支合并到一个公共祖先的过程中可能会出现对同一个文件不同的修改，那么应该保留哪一个呢？？</font></p>
-<p>和之前将分支指针向前推进所不同的是，Git 将此次三方合并的结果<strong>做了一个新的快照</strong>并且自动创建一个新的提交指向它。 这被称作一次合并提交。</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://git-scm.com/book/en/v2/images/basic-merging-2.png" alt="一个合并提交。" class="lazyload"></p>
-<p>既然你的修改已经合并进来了，就不再需要 <code>iss53</code> 分支了。 现在你可以在任务追踪系统中关闭此项任务，并删除这个分支。</p>
-<blockquote>
-<p>删除分支：</p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git branch -d iss53</span></span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="遇到冲突时的分支合并"><a href="#遇到冲突时的分支合并" class="headerlink" title="遇到冲突时的分支合并"></a>遇到冲突时的分支合并</h3><p>如果你对 #53 问题的修改和有关 <code>hotfix</code> 分支的修改都涉及到同一个文件的同一处，在合并它们的时候就会产生合并冲突：</p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git merge iss53</span></span><br><span class="line">Auto-merging index.html</span><br><span class="line">CONFLICT (content): Merge conflict in index.html</span><br><span class="line">Automatic merge failed; fix conflicts and then commit the result.</span><br></pre></td></tr></table></figure>
-
-<p>此时 Git 做了合并，但是没有自动地创建一个新的合并提交。 Git 会暂停下来，等待你去解决合并产生的冲突。 你可以在合并冲突后的任意时刻使用 <code>git status</code> 命令来查看那些因包含合并冲突而处于未合并（unmerged）状态的文件：</p>
-<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line">You have unmerged paths.</span><br><span class="line">  (fix conflicts and run &quot;git commit&quot;)</span><br><span class="line"></span><br><span class="line">Unmerged paths:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to mark resolution)</span><br><span class="line"></span><br><span class="line">    both modified:      index.html</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="待续…"><a href="#待续…" class="headerlink" title="待续…."></a>待续….</h3><p>剩下的不看了，用到再说。</p>
-<p>下次从<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">这里</a>和黑马-git-分支-4看起；</p>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2020/12/04/java/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Java正则表达式" class="lazyload">
-                    <h1>Java正则表达式</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月04日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
-        </div>
-
-        <article>
-            
-                <hr>
-<hr>
-<p>[TOC]</p>
-<h3 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h3><blockquote>
-<p>原始需求:<br>解析 complex.format()得到的formatted:String,如: “(1,2i)”</p>
-<p>难点在于匹配对象是模式而非具体，得到 [int real=1 ; int real = 2] 这两个complex对象的属性</p>
-<p>因此String提供的提取方法不起作用；</p>
-<p>符合需求的工具是 <strong>Java Regular Expression</strong></p>
-</blockquote>
-<h3 id="截取字符串-无效方法"><a href="#截取字符串-无效方法" class="headerlink" title="截取字符串(无效方法)"></a>截取字符串(无效方法)</h3><blockquote>
-<p>补充String提取字符串的常用方法</p>
-<img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20170809090841097?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveHVlaHl1bnl1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload">
-
-<img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20170809090908389" alt="img" class="lazyload">
-</blockquote>
-<h3 id="Java-正则表达式"><a href="#Java-正则表达式" class="headerlink" title="Java 正则表达式"></a>Java 正则表达式</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1XW411R7RF?from=search&seid=11324223660762824293">视频链接</a></li>
-</ul>
-<h3 id="普通标题"><a href="#普通标题" class="headerlink" title="普通标题"></a>普通标题</h3><h4 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h4><h5 id="普通字符-1"><a href="#普通字符-1" class="headerlink" title="普通字符"></a>普通字符</h5><ul>
-<li>表示字符本身</li>
-</ul>
-<p>简单的转义字符</p>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201204112032.png" alt="image-20201127164702982" class="lazyload"></p>
-<blockquote>
-<p>转义字符是指用\修饰的字符 </p>
-<p>而原本的字符在正则表达式中有着特殊的含义。</p>
-</blockquote>
-<h4 id="标准字符集合"><a href="#标准字符集合" class="headerlink" title="标准字符集合"></a>标准字符集合</h4><ul>
-<li>表示模式 </li>
-<li>大写表示取反<ul>
-<li>比如 \d 匹配数字 \D匹配非数字</li>
-</ul>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>regx</th>
-<th>匹配对象</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>\d</td>
-<td>数字</td>
-<td>null</td>
-</tr>
-<tr>
-<td>\w</td>
-<td>字母数字下划线</td>
-<td>合法用户名的组成字符</td>
-</tr>
-<tr>
-<td>\s</td>
-<td>空白字符</td>
-<td>line break      space tab</td>
-</tr>
-<tr>
-<td>.</td>
-<td>任意字符</td>
-<td>除了换行符 如果要匹配换行符一般用[\s\S]</td>
-</tr>
-</tbody></table>
-<h4 id="自定义字符集合"><a href="#自定义字符集合" class="headerlink" title="自定义字符集合"></a>自定义字符集合</h4><table>
-<thead>
-<tr>
-<th>regx</th>
-<th>匹配对象</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>[abc]</td>
-<td>a || b || c</td>
-<td>匹配a或b或c</td>
-</tr>
-<tr>
-<td>[^abc]</td>
-<td>匹配abc以外字符</td>
-<td>通过^取反</td>
-</tr>
-<tr>
-<td>[0-a]</td>
-<td>匹配连续字符</td>
-<td>字符序列的顺序是 0-9 A-Z a-z (按ascii码升序)</td>
-</tr>
-</tbody></table>
-<ul>
-<li>注意之前提到的转义字符在[]在没有歧义的情况下不需要加\   </li>
-</ul>
-<h4 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h4><table>
-<thead>
-<tr>
-<th>regex</th>
-<th>匹配对象</th>
-<th>说明</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>\d{6}</td>
-<td>连续六个数字</td>
-<td>\d\d{6}匹配7位 (\d\d){6} 匹配12位感觉像乘法优先级比加法高</td>
-<td></td>
-</tr>
-<tr>
-<td>\d{m,n}</td>
-<td>匹配n,m位数字</td>
-<td>贪婪模式: 匹配的越多越好</td>
-<td></td>
-</tr>
-<tr>
-<td>\d{m,}</td>
-<td></td>
-<td>至少重复m次</td>
-<td></td>
-</tr>
-<tr>
-<td>\d?</td>
-<td></td>
-<td>等价于 \d{0,1}</td>
-<td></td>
-</tr>
-<tr>
-<td>\d+</td>
-<td></td>
-<td>等价于 \d{1,}</td>
-<td></td>
-</tr>
-<tr>
-<td>\d*</td>
-<td></td>
-<td>等价于 \d{0,}</td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="字符边界"><a href="#字符边界" class="headerlink" title="字符边界"></a>字符边界</h4><ul>
-<li>表示的不是字符而是边界,对匹配字符的位置位置进行限定(满足规则的字符串还必须出现在指定的位置)</li>
-<li>由于边界和光标位置一样处在两个字符之间，因此是”零宽”的。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>regex</th>
-<th>匹配对象</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>^abc</td>
-<td>字符串开头的abc</td>
-<td>^匹配字符串开始的位置</td>
-</tr>
-<tr>
-<td>abc$</td>
-<td>字符串结尾的abc</td>
-<td>$匹配字符串的结束位置</td>
-</tr>
-<tr>
-<td>\babc</td>
-<td></td>
-<td>匹配一个位置，前面的字符和后面的字符不全是\w 不是\w可以是什么呢？ 可以是空白字符和@#%$这些不构成单词的字符</td>
-</tr>
-</tbody></table>
-<h4 id="匹配模式"><a href="#匹配模式" class="headerlink" title="匹配模式"></a>匹配模式</h4><ul>
-<li>IGNORECASE 忽略大小写 </li>
-<li>SINGLELINE 单行模式  <ul>
-<li>将整个文本看作一个字符串，只有一个开头和结尾</li>
-<li>这时 “.” 可以匹配”\n”</li>
-</ul>
-</li>
-<li>MUTILINE 多行模式 <ul>
-<li>每行都是一个字符串，都有开头和结尾。</li>
-<li>该模式下使用 \A 匹配最开始位置 \Z匹配最末尾</li>
-</ul>
-</li>
-</ul>
-<h4 id="选择符和分组"><a href="#选择符和分组" class="headerlink" title="选择符和分组"></a>选择符和分组</h4><table>
-<thead>
-<tr>
-<th>regx</th>
-<th>匹配对象</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>|</td>
-<td>配对对象满足左表达式或右表达式</td>
-<td></td>
-</tr>
-<tr>
-<td>()                                                             捕获组</td>
-<td>1. 作为整体被量词修饰                                                                                                                                              2. 取匹配结果的时候，括号中的表达式匹配到的内容可以被单独拿到                                                                                                                                           3. 每一对括号分配编号从1开始                                                                                                                      4.group(0)表示的是符合所有分组的匹配对象</td>
-<td></td>
-</tr>
-<tr>
-<td>(?:)                                 非捕获      组</td>
-<td>捕获组会自动将捕获到的字符放入内存 ，但是有时候我们只是需要使用括号来组织表达式结构(把某部分看作整体)，而不会用到反向应用，这时候就需要使用？声明。</td>
-<td></td>
-</tr>
-</tbody></table>
-<h5 id="反向引用-nnn"><a href="#反向引用-nnn" class="headerlink" title="反向引用(\nnn)"></a>反向引用(\nnn)</h5><ul>
-<li>对已捕获的分组字符串进行引用</li>
-<li>他表示的是普通字符而不是模式</li>
-</ul>
-<p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pattren : [a-z]&#123;2&#125;\1 </span><br><span class="line">string : asdasd gogo </span><br><span class="line">&#x2F;&#x2F; 匹配结果 gogo \1以引用的方式</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-<h4 id="预搜索-零宽断言"><a href="#预搜索-零宽断言" class="headerlink" title="预搜索(零宽断言)"></a>预搜索(零宽断言)</h4><table>
-<thead>
-<tr>
-<th>regx</th>
-<th>匹配对象</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>(?=exp)  `([a-z]+)(?=ing)</td>
-<td>断言此位置后面一定是exp</td>
-<td></td>
-</tr>
-<tr>
-<td>(?!exp)</td>
-<td>断言此位置后面不是exp</td>
-<td></td>
-</tr>
-<tr>
-<td>(?&lt;=exp)</td>
-<td>断言此位置前面一定是exp</td>
-<td></td>
-</tr>
-<tr>
-<td>(?&lt;!exp)</td>
-<td>断言此位置前面不是exp</td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="Java语法"><a href="#Java语法" class="headerlink" title="Java语法"></a>Java语法</h4><ul>
-<li>Pattern :<ul>
-<li>正则表达式的编译表示形式</li>
-<li>Pattern p = new Pattren.compile(r,int);//建立正则表达式，并启用相应的模式</li>
-</ul>
-</li>
-<li>Matcher<ul>
-<li>通过解释Pattern对character sequence 执行匹配操作的引擎</li>
-<li>Macher m = p.matcher(str); // str 匹配字符串</li>
-</ul>
-</li>
-</ul>
-
-            
-        </article>
-    </div>
-    
-</section>
-
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
-<script>
-	hljs.initHighlightingOnLoad();
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <title>归档 | Blog</title>
+  
 
 
-<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1607933750806"></script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content archive">
+            
+
+  
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-12-14T09:21:04+08:00"
+              content="2020-12-14">
+          12-14
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/12/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91-%E4%B8%8B-%E5%A0%86/" itemprop="url">
+            <span itemprop="name">树(下) 堆</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-12-04T20:31:50+08:00"
+              content="2020-12-04">
+          12-04
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/12/04/git/git%E5%88%86%E6%94%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">
+            <span itemprop="name">git分支学习笔记</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-12-04T11:19:01+08:00"
+              content="2020-12-04">
+          12-04
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/12/04/java/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url">
+            <span itemprop="name">Java正则表达式</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">kkddyz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kkddyz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
 
   
 
@@ -597,6 +366,19 @@
 
 
 
-</body>
 
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
