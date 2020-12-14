@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1607085154599">
+  <link rel="stylesheet" href="/css/style.css?v=1607933750805">
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -45,8 +45,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>2</div>
-        <div><span>标签</span>2</div>
+        <div><span>文章</span>3</div>
+        <div><span>标签</span>3</div>
         <div><span>分类</span>0</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -101,7 +101,7 @@
   
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a>
     </div>
     
   </div>
@@ -111,7 +111,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -139,7 +139,68 @@
         <section class="nexmoe-posts">
     
     <div class="nexmoe-post">
-        <a href="/2020/12/04/git%E5%88%86%E6%94%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <a href="/2020/12/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91-%E4%B8%8B-%E5%A0%86/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="树(下) 堆" class="lazyload">
+                    <h1>树(下) 堆</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月14日</a>
+            <a><i class="nexmoefont icon-areachart"></i>766 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+        </div>
+
+        <article>
+            
+                <blockquote>
+<p>学习堆-树-浙大数据结构-慕课 </p>
+</blockquote>
+<h2 id="什么是堆？"><a href="#什么是堆？" class="headerlink" title="什么是堆？"></a>什么是堆？</h2><ul>
+<li><strong>优先队列(Priority Queue)</strong> ：特殊的 “队列” ,取出元素的顺序按照元素的**优先权(关键字)**大小，而不是入队顺序决定。</li>
+</ul>
+<h2 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h2><ol>
+<li>线性结构</li>
+</ol>
+<img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214094255.png" alt="image-20201214094255458" class="lazyload">
+
+<ul>
+<li>我们发现插入或者删除总有一个操作效率不理想。</li>
+</ul>
+<ol start="2">
+<li>二叉树 </li>
+</ol>
+<ul>
+<li>如果使用二叉树，插入删除都是O(log n)</li>
+<li>问题在于不断地删除操作会使得树逐渐不平衡，效率降低 ：O(log n) -&gt; O(n)</li>
+</ul>
+<ol start="3">
+<li>完全二叉树</li>
+</ol>
+<img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214095513.png" alt="image-20201214095513054" class="lazyload">
+
+
+
+<p>我们可以发现它的每一条路径(root -&gt; 叶节点) 都是一条有序链表；</p>
+<hr>
+<h2 id="抽象数据描述"><a href="#抽象数据描述" class="headerlink" title="抽象数据描述"></a>抽象数据描述</h2><img data-fancybox="gallery" data-sizes="auto" data-src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201214100205.png" alt="image-20201214100205272" class="lazyload">
+
+
+
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ClassName</span> MaxHeap</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> 学习 堆-树-浙大数据结构-慕课</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span> 2020/12/14 10:10</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MaxHeap</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] array; </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size; </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> capacity;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> capacity)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.capacity = capacity;</span><br><span class="line">        <span class="keyword">this</span>.size = <span class="number">0</span>;</span><br><span class="line">        array = <span class="keyword">new</span> <span class="keyword">int</span>[capacity + <span class="number">1</span>]; <span class="comment">//  0 不存放元素</span></span><br><span class="line">        array[<span class="number">0</span>] = Integer.MAX_VALUE;  <span class="comment">//  放置一个最大值作为哨兵</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> capacity,<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(capacity);</span><br><span class="line">        <span class="keyword">this</span>.create(arr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isFull</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == capacity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 最大堆的建立</span></span><br><span class="line"><span class="comment">     * 1. 通过不断插入 其最大事件复杂度O(N log N)</span></span><br><span class="line"><span class="comment">     * 2. 将n个元素顺序放入 从后向前依次调整</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">create</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 拷贝</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">this</span>.array[i + <span class="number">1</span>] = arr[i];</span><br><span class="line">            size++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调整</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> parent, child, temp;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调整以array[i]为根的完全二叉树</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = size / <span class="number">2</span>; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="comment">// 拿到要调整的元素</span></span><br><span class="line">            temp = array[i];</span><br><span class="line">            <span class="keyword">for</span> (parent = i; parent * <span class="number">2</span> &lt;= size; parent = child) &#123;</span><br><span class="line">                child = parent * <span class="number">2</span>;</span><br><span class="line">                <span class="comment">// child指向较大的儿子 [思考需要变化的情况以及变化的前提条件]</span></span><br><span class="line">                <span class="keyword">if</span> (child != size &amp;&amp; array[child] &lt; array[child + <span class="number">1</span>]) &#123;</span><br><span class="line">                    child++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">// temp &gt; child child上移</span></span><br><span class="line">                <span class="keyword">if</span> (temp &lt; array[child]) &#123;</span><br><span class="line">                    array[parent] = array[child];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            array[parent] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> item)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (isFull())</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;最大堆已满&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="comment">// 调序 : 最大堆 降序</span></span><br><span class="line">        <span class="keyword">for</span> (i = ++size; item &gt; array[i / <span class="number">2</span>]; i /= <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="comment">// 向下过滤节点</span></span><br><span class="line">            array[i] = array[i / <span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 插入item</span></span><br><span class="line">        array[i] = item; <span class="comment">// item &lt; array[i/2] i 当前所在的位置</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">deleteMax</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> parent, child;</span><br><span class="line">        <span class="keyword">if</span> (isEmpty())</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">&quot;最大堆已空&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> maxItem = array[<span class="number">1</span>]; <span class="comment">//取出最大元素返回</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 拿到末端元素</span></span><br><span class="line">        <span class="keyword">int</span> temp = array[size--]; <span class="comment">// 不需要将size上的元素置空</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (parent = <span class="number">1</span>; parent * <span class="number">2</span> &lt;= size; parent = child) &#123;</span><br><span class="line">            child = parent * <span class="number">2</span>;</span><br><span class="line">            <span class="comment">// child指向较大的儿子 [思考需要变化的情况以及变化的前提条件]</span></span><br><span class="line">            <span class="keyword">if</span> (child != size &amp;&amp; array[child] &lt; array[child + <span class="number">1</span>]) &#123;</span><br><span class="line">                child++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// temp &gt; child child上移</span></span><br><span class="line">            <span class="keyword">if</span> (temp &lt; array[child]) &#123;</span><br><span class="line">                array[parent] = array[child];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        array[parent] = temp;</span><br><span class="line">        <span class="keyword">return</span> maxItem;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(Arrays.toString(array));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>&#125;;</span><br><span class="line">        MaxHeap maxHeap = <span class="keyword">new</span> MaxHeap(<span class="number">15</span>,arr);</span><br><span class="line">        maxHeap.print();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            maxHeap.insert(<span class="number">15</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        maxHeap.print();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码详解"><a href="#代码详解" class="headerlink" title="代码详解"></a>代码详解</h2><p>这部分过一阵子，等复习到的时候画一份图解；</p>
+<p>建议自己看视频学习；</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2020/12/04/git/git%E5%88%86%E6%94%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
                     <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="git分支学习笔记" class="lazyload">
@@ -237,7 +298,7 @@
     </div>
     
     <div class="nexmoe-post">
-        <a href="/2020/12/04/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+        <a href="/2020/12/04/java/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
                     <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Java正则表达式" class="lazyload">
@@ -528,7 +589,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1607085154599"></script>
+ <script src="/js/app.js?v=1607933750806"></script>
 
   
 
