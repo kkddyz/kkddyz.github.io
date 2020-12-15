@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -141,6 +141,89 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="kkddyz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">二叉树遍历的非递归实现</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-15 19:17:47 / 修改时间：20:56:42" itemprop="dateCreated datePublished" datetime="2020-12-15T19:17:47+08:00">2020-12-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="中序遍历-amp-amp-后序遍历"><a href="#中序遍历-amp-amp-后序遍历" class="headerlink" title="中序遍历&amp;&amp;后序遍历"></a>中序遍历&amp;&amp;后序遍历</h2><ul>
+<li><p>难点在于如何使用堆栈模拟递归的调用。</p>
+</li>
+<li><p>算法思路</p>
+<ol>
+<li>每遇到一个结点，入栈，并遍历它的左子树 </li>
+<li>左子树遍历结束后弹出该结点，并访问</li>
+<li>然后按照其右指针再去中序宾利该节点的右子树</li>
+</ol>
+</li>
+<li><p>算法思路·改</p>
+<ol>
+<li>开始循环压入左孩子(cur = cur.left),结束后 cur.left == null</li>
+<li>弹出栈顶元素，访问，转向右子树</li>
+</ol>
+</li>
+</ul>
+<h3 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h3><ul>
+<li>以下图为例</li>
+</ul>
+<p><img src="https://kkddyz-oss-image-hosting-service.oss-cn-hangzhou.aliyuncs.com/image/20201215192324.png" alt="image-20201215192323916"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 中序遍历 非递归</span></span><br><span class="line"><span class="comment"> * 本质思想就是使用堆栈记录函数的调用栈</span></span><br><span class="line"><span class="comment"> * cur 表示中序遍历中的node参数 stack中是递归的调用栈</span></span><br><span class="line"><span class="comment"> * 我们【压入所有左节点节点】 stack。topValue() 由于其[left == null] 因此直接就执行【访问操作】</span></span><br><span class="line"><span class="comment"> * 【访问操作】我们需要调用 【preOrderTraversal(node.right)】==&gt; [cur=cur.right]</span></span><br><span class="line"><span class="comment"> * &lt;p&gt;</span></span><br><span class="line"><span class="comment"> * 本质上就是不断将递归的函数压入栈，处理递归链末端，即栈顶元素，将处理中递归的函数再入栈。</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">no_recurse_inOrderTraversal</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    LinkedStack&lt;Node&lt;T&gt;&gt; stack = <span class="keyword">new</span> LinkedStack&lt;&gt;();</span><br><span class="line">    Node&lt;T&gt; cur = root; <span class="comment">//cur 表示当前的树节点</span></span><br><span class="line">    <span class="comment">// &lt;1&gt;函数栈中方法没有抛出 或者 &lt;2&gt;当前调用方法不空</span></span><br><span class="line">    <span class="comment">// &lt;1&gt; &lt;2&gt;只出现一种再递归中是合理的</span></span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty() || cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">// 循环左递归</span></span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123; <span class="comment">//</span></span><br><span class="line">            stack.push(cur);</span><br><span class="line">            cur = cur.left;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 处理函数栈顶方法</span></span><br><span class="line">        <span class="keyword">if</span> (!stack.isEmpty()) &#123;</span><br><span class="line">            cur = stack.popValue(); <span class="comment">/*节点弹出堆栈*/</span></span><br><span class="line">            System.out.println(cur.data);</span><br><span class="line">            cur = cur.right; <span class="comment">/*转向右子树*/</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 后序遍历 非递归</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 难点在于 中序遍历 函数栈抛出与结点访问时一致的，意思是当方法从栈中抛出后(遍历完左子树)，紧接着就是访问结点</span></span><br><span class="line"><span class="comment"> * 而后续遍历 访问结点发生在遍历左子树，遍历右子树，这两个方法都抛出后,如何判断函数调用完毕</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 通过last记录上次之抛出的方法，一个结点如果右结点调用的方法抛出说明右遍历实现</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">no_recurse_postOrderTraversal</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    LinkedStack&lt;Node&lt;T&gt;&gt; stack = <span class="keyword">new</span> LinkedStack&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    Node&lt;T&gt; cur = root;</span><br><span class="line">    Node&lt;T&gt; last = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty() || cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">// 循环左递归</span></span><br><span class="line">        <span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">            stack.push(cur);</span><br><span class="line">            cur = cur.left;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 处理方法栈调用链的末端</span></span><br><span class="line">        <span class="keyword">if</span> (!stack.isEmpty()) &#123;</span><br><span class="line">            <span class="comment">// 判断cur 【preOrderTraversal(node.right)】是否调用</span></span><br><span class="line">            cur = stack.popValue();</span><br><span class="line">            <span class="keyword">if</span> (cur.right == <span class="keyword">null</span> || cur.right == last ) <span class="comment">/*右子树已经遍历 访问*/</span>&#123;</span><br><span class="line">                System.out.println(cur.data);</span><br><span class="line">                last = cur;</span><br><span class="line">                cur = <span class="keyword">null</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 如果没有方法不抛出</span></span><br><span class="line">                stack.push(cur);</span><br><span class="line">                cur = cur.right;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>下面是推理过程</p>
+<p>以后有时间再说。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -749,7 +832,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -787,7 +870,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">kkddyz</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
         
